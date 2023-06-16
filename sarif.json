@@ -37,6 +37,7 @@
             "markdown": "#0 0x7ffff7f617b0 in __memcpy_ssse3+0xe10 at ??:0:0\n#1 0x55555556e04c in config_tokenizer at /build/lighttpd-1.4.15/src/configfile.c:760:29\n#2 0x55555556c1d4 in config_insert at /build/lighttpd-1.4.15/src/configfile.c:142:3\n#3 0x555555562da4 in server_init at /build/lighttpd-1.4.15/src/server.c:191:20\n#4 0x555555563c5c in main at /build/lighttpd-1.4.15/src/server.c:716:7\n#5 0x55555555e1fe in main at /build/lighttpd-1.4.15/src/server.c:1309:18\n#6 0x7ffff7e2909b in __libc_start_main at /build/glibc-vjB4T1/glibc-2.28/csu/../csu/libc-start.c:342:3\n#7 0x55555555b83a in _start+0x2a at ??:0:0\n",
             "text": "TDID-390698 - Out-of-bounds Read"
           },
+          "partialFingerprints": {"stack/v1": "68b329da9893e34099c7d8ad5cb9c940"},
           "locations": [
             {
               "physicalLocation": {
