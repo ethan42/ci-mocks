@@ -1,37 +1,40 @@
 {
-  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
-  "version": "2.1.0",
   "runs": [
     {
       "tool": {
         "driver": {
-          "name": "scanner",
-          "informationUri": "mayhem.security",
-          "semanticVersion": "2.0.0",
+          "name": "Mayhem for Code",
           "rules": [
             {
-              "id": "3f292041e51d22005ce48f39df3585d44ce1b0ad",
-              "helpUri": "https://cwe.mitre.org/data/definitions/369.html",
-              "name": "DivideByZero",
+              "id": "MI-108",
+              "name": "out-of-bounds-read",
               "shortDescription": {
-                "text": "CWE-369: The product divides a value by zero."
-              },
-              "fullDescription": {
-                "text": "Unused variables, imports, functions or classes may be a symptom of a bug and should be examined carefully."
-              },
-              "defaultConfiguration": {
-                "level": "note"
-              },
-              "properties": {
-                "tags": [
-                    "correctness"
-                ],
-                "precision": "very-high"
+                "text": "The software reads data past the end, or before the beginning, of the intended buffer."
+              }
+            },
+            {
+              "id": "MI-109",
+              "name": "out-of-bounds-write",
+              "shortDescription": {
+                "text": "The software writes data past the end, or before the beginning, of the intended buffer."
+              }
+            },
+            {
+              "id": "MI-101",
+              "name": "improper-input-validation",
+              "shortDescription": {
+                "text": "The software receives input or data, but it does not validate or incorrectly validates that the input has the properties that are required to process the data safely and correctly."
               }
             }
-          ]
+          ],
+          "version": "1.17.0",
+          "informationUri": "https://www.forallsecure.com/"
         }
-      }
+      },
+      "results": [
+      ]
     }
-  ]
+  ],
+  "version": "2.1.0",
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Documents/CommitteeSpecifications/2.1.0/sarif-schema-2.1.0.json"
 }
