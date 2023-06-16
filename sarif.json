@@ -6,7 +6,7 @@
       "tool": {
         "driver": {
           "name": "scanner",
-          "informationUri": "forallsecure.com",
+          "informationUri": "https://mayhem.security",
           "semanticVersion": "2.0.0",
           "rules": [
             {
