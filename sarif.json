@@ -1,0 +1,37 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "scanner",
+          "informationUri": "mayhem.security",
+          "semanticVersion": "2.0.0",
+          "rules": [
+            {
+              "id": "3f292041e51d22005ce48f39df3585d44ce1b0ad",
+              "helpUri": "https://cwe.mitre.org/data/definitions/369.html",
+              "name": "DivideByZero",
+              "shortDescription": {
+                "text": "CWE-369: The product divides a value by zero."
+              },
+              "fullDescription": {
+                "text": "Unused variables, imports, functions or classes may be a symptom of a bug and should be examined carefully."
+              },
+              "defaultConfiguration": {
+                "level": "note"
+              },
+              "properties": {
+                "tags": [
+                    "correctness"
+                ],
+                "precision": "very-high"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
